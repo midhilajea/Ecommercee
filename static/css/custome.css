@@ -1,10 +1,72 @@
+:root {
+
+    /**
+     * colors
+     */
+  
+    --spanish-gray: hsl(0, 0%, 60%);
+    --sonic-silver: hsl(0, 0%, 47%);
+    --eerie-black: hsl(0, 0%, 13%);
+    --salmon-pink: hsl(353, 100%, 78%);
+    --sandy-brown: hsl(29, 90%, 65%);
+    --bittersweet: hsl(0, 100%, 70%);
+    --ocean-green: hsl(152, 51%, 52%);
+    --davys-gray: hsl(0, 0%, 33%);
+    --cultured: hsl(0, 0%, 93%);
+    --white: hsl(0, 100%, 100%);
+    --onyx: hsl(0, 0%, 27%);
+
+--fs-1: 1.563rem;
+  --fs-2: 1.375rem;
+  --fs-3: 1.25rem;
+  --fs-4: 1.125rem;
+  --fs-5: 1rem;
+  --fs-6: 0.938rem;
+  --fs-7: 0.875rem;
+  --fs-8: 0.813rem;
+  --fs-9: 0.75rem;
+  --fs-10: 0.688rem;
+  --fs-11: 0.625rem;
+
+  --weight-300: 300;
+  --weight-400: 400;
+  --weight-500: 500;
+  --weight-600: 600;
+  --weight-700: 700;
+
+  /**
+
+   * transition 
+   */
+
+  --transition-timing: 0.2s ease;
+
+}
+
 body {
     font-family: 'Roboto', sans-serif;
 }
+html {
+    font-family: "Poppins", sans-serif;
+    overscroll-behavior: contain;
+  }
+
 /*navbar*/
+
+.nav-con {
+    height: 60px;
+    
+}
+.navbar {
+    background: rgb(1,97,234);
+    background: linear-gradient(90deg, rgba(1,97,234,1) 0%, rgba(1,97,234,1) 28%, rgba(1,97,234,1) 39%, rgba(0,161,245,1) 58%);
+    border-radius: 5px;
+}
+
 .nav-item {
-    letter-spacing: .2em;
-    font-size: 12px;
+    letter-spacing: .1em;
+    font-size: 14px;
+    font-weight: bold;
     text-transform: uppercase;
     
 
@@ -12,20 +74,72 @@ body {
 
     
 }
+.nav-item a{
+    color: #fff;
+
+}
+.nav-item a:hover {
+    color: #fff;
+    font-size: 16px;
+
+}
+
 .dropdown-item {
-    letter-spacing: .2em;
-    font-size: 11px;
+    letter-spacing: .1em;
+    font-size: 10px;
     text-transform: uppercase;
     
     
+}
+.dropdown-menu li a {
+    color: #000;
+}
+.dropdown-menu li a:hover{
+    color: #000;
+    font-size: 14px;
 }
 
 .my_footer {
     padding-top: 15px;
     font-size: 14px;
+   
+    
+    
+}
+.button {
+    border: 2px solid #fff;
+    color: #fff;
+    
+}
+.button:hover {
+    background-color: #fff;
+    color: #000;
+}
+.user-button {
+    border-radius: 50%;
+    margin-left: 50px;
+    border: 1px solid #fff;
+    margin-right: 10px;
+    
+    
+    
+}
+.user-button i {
+    background-color: #fff;
+    
+    
+    
 }
 
+
 /*category page*/
+.card {
+    border: 1.2px solid #d7d6d6;
+}
+.card:hover {
+    box-shadow: 0 0 20px 1px rgba(0, 0, 0, 0.5);
+    
+}
 
 .my_row_class {
     padding-top: 15px;
@@ -36,15 +150,18 @@ body {
     font-size: 12px;
 
 }
+
 .my_image {
     width: 100%;
     height: auto;
 
 }
 .my_title {
-    font-size: 16px;
+    font-size: 22px;
     text-transform: uppercase;
-    letter-spacing: .2em;
+    letter-spacing: .1em;
+    font-weight: bold;
+    margin-bottom: 25px;
 }
 .my_image_padding {
     padding: 5px;
@@ -53,9 +170,10 @@ body {
     margin-bottom: 14px;
 }
 .card-body h4 {
-    font-size: 14px;
+    font-size: 15px;
     text-transform: uppercase;
-    letter-spacing: .2em;
+    letter-spacing: .1em;
+    font-weight: bold;
     
 }
 .text-justify {
@@ -77,15 +195,52 @@ body {
 
 }
 .my_prod_title {
-    font-size: 16px;
+    font-size: 20px;
+    font-weight: bold;
     text-transform: uppercase;
-    letter-spacing: .2em;
+    letter-spacing: .1em;
     padding-top: 15px;
     margin-bottom: 10px;
+    
 }
 .my_prod_text {
     padding-right: 20px;
+    font-size: 18px;
 }
+.my_prod_dheading {
+    font-size: 19px;
+    font-weight: bolder;
+
+}
+p.price {
+    font-weight: bolder;
+}
+a.btn {
+    background: rgb(1,97,234);
+    background: linear-gradient(90deg, rgba(1,97,234,1) 10%,rgba(0,161,245,1) 58%);
+    padding: 10px 11px;
+    color: #fff;
+}
+a.btn:hover {
+    color: #fff;
+    box-shadow: 2px 5px 6px rgba(0, 0, 0, 0.2);
+   
+}
+.img-con {
+    width: 65%;
+    margin: 0 auto;
+    
+
+}
+.img-con img {
+    width: 100%;
+    display: block;
+    
+}
+.link-home {
+    text-decoration: none;
+}
+
 
 /*** cart page ***/
 
